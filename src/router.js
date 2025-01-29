@@ -1,11 +1,8 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory } from "vue-router";
 
-import Home from './views/Home.vue'
-
+import Home from "./views/Home.vue";
 
 export default createRouter({
     history: createWebHistory(),
-    routes: [
-        {component: Home, path: '/'}
-    ]
-})
+    routes: [{ component: Home, path: "/" }],
+});
