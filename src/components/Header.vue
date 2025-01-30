@@ -3,9 +3,11 @@ import { RouterLink } from "vue-router";
 </script>
 
 <template>
-    <header class="py-6">
+    <header class="py-6 mb-8">
         <div class="content flex">
-            <div>sadas</div>
+            <RouterLink>
+                <img src="../assets/logo.png" alt="Logo" class="w-8" />
+            </RouterLink>
             <nav class="ml-auto">
                 <ul class="flex gap-12">
                     <li>
