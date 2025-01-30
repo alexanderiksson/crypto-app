@@ -14,10 +14,10 @@ import { RouterLink } from "vue-router";
                         <RouterLink to="/">Market</RouterLink>
                     </li>
                     <li>
-                        <RouterLink to="/">About</RouterLink>
+                        <RouterLink to="/about">About</RouterLink>
                     </li>
                     <li>
-                        <RouterLink to="/">Contact</RouterLink>
+                        <RouterLink to="/contact">Contact</RouterLink>
                     </li>
                 </ul>
             </nav>

@@ -13,34 +13,36 @@ const props = defineProps({
     <table class="w-full">
         <thead>
             <tr>
-                <th class="text-left text-xl">Name</th>
-                <th class="text-left text-xl">Price</th>
-                <th class="text-left text-xl">Change &percnt;</th>
-                <th class="text-left text-xl">Volume &#40;24h&#41;</th>
-                <th class="text-left text-xl">Market Cap</th>
+                <th class="text-left text-xl py-4 px-2">Name</th>
+                <th class="text-left text-xl py-4 px-2">Price</th>
+                <th class="text-left text-xl py-4 px-2">Change &percnt;</th>
+                <th class="text-left text-xl py-4 px-2">
+                    Volume &#40;24h&#41;
+                </th>
+                <th class="text-left text-xl py-4 px-2">Market Cap</th>
             </tr>
         </thead>
         <tbody>
             <tr v-for="crypto in data" :key="crypto.id">
-                <td>
+                <td class="py-4 px-2">
                     {{ crypto.name }}
                 </td>
-                <td>
+                <td class="py-4 px-2">
                     {{ formatPrice(crypto.priceUsd) }}
                 </td>
                 <td
                     :class="
                         crypto.changePercent24Hr > 0
                             ? 'text-green-500'
-                            : 'text-red-500'
+                            : 'text-red-500' + ' py-4 px-2'
                     "
                 >
                     {{ formatPercent(crypto.changePercent24Hr) }}
                 </td>
-                <td>
+                <td class="py-4 px-2">
                     {{ formatPrice(crypto.volumeUsd24Hr, "compact") }}
                 </td>
-                <td>
+                <td class="py-4 px-2">
                     {{ formatPrice(crypto.marketCapUsd, "compact") }}
                 </td>
             </tr>
