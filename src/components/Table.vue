@@ -1,7 +1,7 @@
 <script setup>
 import { formatPercent, formatPrice } from "../utils/format";
 
-const props = defineProps({
+defineProps({
     data: {
         type: Array,
         required: true,
