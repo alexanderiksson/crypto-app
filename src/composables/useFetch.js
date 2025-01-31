@@ -1,4 +1,4 @@
-import { ref } from "vue";
+import { ref, onMounted } from "vue";
 import axios from "axios";
 
 export function useFetch(url) {
@@ -6,17 +6,18 @@ export function useFetch(url) {
     const error = ref(null);
     const loading = ref(false);
 
-    async function fetchData() {
-        loading.value = true;
+    onMounted(async () => {
         try {
+            loading.value = true;
             const response = await axios.get(url);
             data.value = response.data;
+            console.log(data.value);
         } catch (err) {
-            error.value = err.message;
+            error.value = err;
         } finally {
             loading.value = false;
         }
-    }
+    });
 
-    return { data, error, loading, fetchData };
+    return { data, error, loading };
 }
