@@ -1,4 +1,5 @@
 <script setup>
+import { RouterLink } from "vue-router";
 import { formatPercent, formatPrice } from "../utils/format";
 
 defineProps({
@@ -25,7 +26,9 @@ defineProps({
         <tbody>
             <tr v-for="crypto in data" :key="crypto.id">
                 <td class="py-4 px-2">
-                    {{ crypto.name }}
+                    <RouterLink :to="`/crypto/${crypto.id}`">{{
+                        crypto.name
+                    }}</RouterLink>
                 </td>
                 <td class="py-4 px-2">
                     {{ formatPrice(crypto.priceUsd) }}
