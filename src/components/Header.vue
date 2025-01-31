@@ -5,7 +5,7 @@ import { RouterLink } from "vue-router";
 <template>
     <header class="py-6 mb-8">
         <div class="content flex">
-            <RouterLink>
+            <RouterLink to="/">
                 <img src="../assets/logo.png" alt="Logo" class="w-8" />
             </RouterLink>
             <nav class="ml-auto">
