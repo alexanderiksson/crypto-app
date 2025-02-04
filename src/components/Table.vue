@@ -1,6 +1,6 @@
 <script setup>
-import { RouterLink } from "vue-router";
-import { formatPercent, formatPrice } from "../utils/format";
+import { RouterLink } from 'vue-router';
+import { formatPercent, formatPrice } from '../utils/format';
 
 defineProps({
     data: {
@@ -43,10 +43,10 @@ defineProps({
                     {{ formatPercent(crypto.changePercent24Hr) }}
                 </td>
                 <td class="py-4 px-2">
-                    {{ formatPrice(crypto.volumeUsd24Hr, "compact") }}
+                    {{ formatPrice(crypto.volumeUsd24Hr, 'compact') }}
                 </td>
                 <td class="py-4 px-2">
-                    {{ formatPrice(crypto.marketCapUsd, "compact") }}
+                    {{ formatPrice(crypto.marketCapUsd, 'compact') }}
                 </td>
             </tr>
         </tbody>

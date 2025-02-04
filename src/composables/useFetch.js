@@ -1,5 +1,5 @@
-import { ref, onMounted } from "vue";
-import axios from "axios";
+import { ref, onMounted } from 'vue';
+import axios from 'axios';
 
 export function useFetch(url) {
     const data = ref(null);

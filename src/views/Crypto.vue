@@ -1,10 +1,9 @@
 <script setup>
-import { useFetch } from "../composables/useFetch";
-import { useRoute } from "vue-router";
-import { computed, ref } from "vue";
-import Loader from "../components/Loader.vue";
-import Chart from "../components/Chart.vue";
-import { formatPrice } from "../utils/format";
+import { useFetch } from '../composables/useFetch';
+import { useRoute } from 'vue-router';
+import { computed, ref } from 'vue';
+import Loader from '../components/Loader.vue';
+import Chart from '../components/Chart.vue';
 
 const route = useRoute();
 const { data, error, loading } = useFetch(
@@ -19,9 +18,9 @@ const chartData = computed(() => ({
     labels: price.value.map((item) => new Date(item.time).toLocaleTimeString()),
     datasets: [
         {
-            label: "Price (USD)",
+            label: 'Price (USD)',
             data: price.value.map((item) => item.priceUsd),
-            borderColor: "#592dfa",
+            borderColor: '#592dfa',
             tension: 0.4,
             borderWidth: 2,
             pointRadius: 0,
