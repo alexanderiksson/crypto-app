@@ -4,8 +4,9 @@
     "useTabs": false,
     "semi": true,
     "singleQuote": true,
-    "trailingComma": "es5",
+    "trailingComma": "none",
     "bracketSpacing": true,
     "arrowParens": "always",
-    "endOfLine": "lf"
+    "endOfLine": "lf",
+    "vueIndentScriptAndStyle": true
 }

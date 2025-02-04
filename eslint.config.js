@@ -1,16 +1,26 @@
-module.exports = {
-    root: true,
-    env: {
-        node: true,
-        es6: true,
+import pluginVue from 'eslint-plugin-vue';
+
+export default [
+    ...pluginVue.configs['flat/recommended'],
+    {
+        rules: {
+            'vue/html-closing-bracket-newline': 'off',
+            'vue/html-indent': 'off',
+            'vue/html-self-closing': [
+                'warn',
+                {
+                    html: {
+                        component: 'always',
+                        normal: 'always',
+                        void: 'always',
+                    },
+                },
+            ],
+            'vue/attributes-order': 'off',
+            'vue/max-attributes-per-line': 'off',
+            'vue/multiline-html-element-content-newline': 'off',
+            'vue/order-in-components': 'off',
+            'vue/singleline-html-element-content-newline': 'off',
+        },
     },
-    extends: ['eslint:recommended', 'plugin:vue/vue3-essential'],
-    parserOptions: {
-        ecmaVersion: 2020,
-        sourceType: 'module',
-    },
-    rules: {
-        'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-        'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    },
-};
+];

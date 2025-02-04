@@ -1,13 +1,13 @@
 <script setup>
-import { RouterLink } from 'vue-router';
-import { formatPercent, formatPrice } from '../utils/format';
+    import { RouterLink } from 'vue-router';
+    import { formatPercent, formatPrice } from '../utils/format';
 
-defineProps({
-    data: {
-        type: Array,
-        required: true,
-    },
-});
+    defineProps({
+        data: {
+            type: Array,
+            required: true
+        }
+    });
 </script>
 
 <template>
