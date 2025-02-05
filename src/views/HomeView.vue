@@ -15,7 +15,7 @@
 
 <template>
     <div class="content">
-        <h1 class="text-4xl mb-8">Market</h1>
+        <h1 class="text-4xl font-semibold mb-8">Market</h1>
 
         <template v-if="loading">
             <Loader />
