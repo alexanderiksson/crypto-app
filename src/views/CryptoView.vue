@@ -30,13 +30,13 @@
             </h1>
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-8">
                 <div
-                    class="lg:col-span-2 p-4 lg:p-8 shadow-2xl border-secondaryBackground border rounded-lg"
+                    class="lg:col-span-2 p-4 lg:p-8 shadow-lg border-secondaryBackground border rounded-lg"
                 >
                     <Chart :crypto="route.params.id" />
                 </div>
                 <div class="flex flex-col gap-4 lg:gap-8">
                     <div
-                        class="text-xl font-semibold p-4 lg:p-8 shadow-2xl border-secondaryBackground border rounded-lg flex flex-col gap-12"
+                        class="text-xl font-semibold p-4 lg:p-8 shadow-lg border-secondaryBackground border rounded-lg flex flex-col gap-12"
                     >
                         <div class="flex flex-col items-center gap-2">
                             <p
@@ -56,7 +56,7 @@
                         </div>
                     </div>
                     <div
-                        class="text-sm font-semibold p-4 lg:p-8 shadow-2xl border-secondaryBackground border rounded-lg flex-grow flex flex-col justify-between"
+                        class="text-sm font-semibold p-4 lg:p-8 shadow-lg border-secondaryBackground border rounded-lg flex-grow flex flex-col justify-between"
                     >
                         <div class="flex justify-between">
                             <p>Volume</p>

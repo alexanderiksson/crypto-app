@@ -5,9 +5,16 @@
 @tailwind utilities;
 
 :root {
+    --background: #eeeeee;
+    --secondary-background: #c9c8c8;
+    --foreground: #000000;
+    --primary: #592dfa;
+}
+
+.darkmode {
     --background: #0f1323;
     --secondary-background: #161c32;
-    --primary: #592dfa;
+    --foreground: #ffffff;
 }
 
 body,
@@ -16,7 +23,7 @@ body,
     flex-direction: column;
     min-height: 100vh;
     background-color: var(--background);
-    color: white;
+    color: var(--foreground);
     font-family: 'Poppins', sans-serif;
 }
 
