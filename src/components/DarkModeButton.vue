@@ -7,7 +7,7 @@
 <template>
     <button
         @click="settingStore.toggleDarkMode"
-        class="flex items-center justify-center w-12 h-12 bg-secondaryBackground rounded-full"
+        class="flex items-center justify-center w-12 h-12 bg-secondaryBackground rounded-full transition-all duration-300 ease-in-out"
     >
         <template v-if="settingStore.darkMode">
             <svg
