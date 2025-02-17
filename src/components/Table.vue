@@ -17,10 +17,12 @@
                 <th class="text-left text-xl py-4 px-2">Name</th>
                 <th class="text-left text-xl py-4 px-2">Price</th>
                 <th class="text-left text-xl py-4 px-2">Change &percnt;</th>
-                <th class="text-left text-xl py-4 px-2">
+                <th class="hidden md:table-cell text-left text-xl py-4 px-2">
                     Volume &#40;24h&#41;
                 </th>
-                <th class="text-left text-xl py-4 px-2">Market Cap</th>
+                <th class="hidden md:table-cell text-left text-xl py-4 px-2">
+                    Market Cap
+                </th>
             </tr>
         </thead>
         <tbody>
@@ -42,10 +44,10 @@
                 >
                     {{ formatPercent(crypto.changePercent24Hr) }}
                 </td>
-                <td class="py-4 px-2">
+                <td class="hidden md:table-cell py-4 px-2">
                     {{ formatPrice(crypto.volumeUsd24Hr, 'compact') }}
                 </td>
-                <td class="py-4 px-2">
+                <td class="hidden md:table-cell py-4 px-2">
                     {{ formatPrice(crypto.marketCapUsd, 'compact') }}
                 </td>
             </tr>
