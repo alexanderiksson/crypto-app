@@ -42,11 +42,11 @@
 
     <!-- Mobile Nav -->
     <div
-        class="md:hidden fixed z-50 bg-background h-screen w-screen px-16 py-8 shadow-lg transition-all duration-300 ease-in-out"
+        class="md:hidden fixed z-50 bg-background h-screen w-screen px-10 py-8 shadow-lg transition-all duration-300 ease-in-out"
         :style="{ right: menuOpen ? '0' : '-120%' }"
     >
         <CloseButton @hamburgerMenu="toggleMenu" />
-        <nav class="h-full flex flex-col justify-center text-xl">
+        <nav class="h-full flex flex-col justify-center text-2xl">
             <ul class="flex flex-col gap-6">
                 <li>
                     <RouterLink @click="toggleMenu" to="/">Market</RouterLink>

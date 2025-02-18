@@ -1,6 +1,6 @@
 <script setup>
     import { useSettingStore } from '../store/settingStore';
-    import { computed, defineEmits } from 'vue';
+    import { computed } from 'vue';
 
     const settingStore = useSettingStore();
     const currentColor = computed(() =>
